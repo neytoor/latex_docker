@@ -1,0 +1,10 @@
+=================================================================
+Construir la imagen
+
+docker build -t latex -f Docker_latex .
+=================================================================
+
+Crear el container
+
+docker run --name latexcrear -ti -v $PWD/midata:/construir latex
+=================================================================

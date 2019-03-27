@@ -1,0 +1,51 @@
+FROM fedora:28
+
+MAINTAINER Yonier Gomez <yasprilla@summan.com>
+
+RUN dnf -y install git \
+                      linux-libertine-fonts \
+                      linux-libertine-biolinum-fonts \
+                      linux-libertine-fonts-common \
+                      levien-inconsolata-fonts \
+                      python3-sphinx \
+                      latexmk \
+                      scap-security-guide \
+                      scap-workbench \
+                      openscap-utils \
+                      openscap-python \
+                      python-lxml \
+                      pandoc \
+                      python-suds \
+                      python3-numpy \
+                      python3-matplotlib \
+                      python-mako \
+                      python3-mako \
+                      python2-openpyxl \
+                      python3-openpyxl \
+                      python3-PyYAML \
+                      perl-Date-Calc \
+                      rrdtool \
+                      rst2pdf \
+                      inkscape \
+                      texlive-collection-xetex \
+                      texlive-collection-science \
+                      texlive-collection-publishers \
+                      texlive-collection-pstricks \
+                      texlive-collection-pictures \
+                      texlive-collection-langspanish \
+                      texlive-collection-langenglish \
+                      texlive-collection-fontutils \
+                      texlive-collection-htmlxml \
+                      texlive-collection-humanities \
+                      texlive-collection-genericrecommended \
+                      texlive-collection-basic \
+                      texlive-collection-fontsextra \
+                      texlive-collection-context \
+                      texlive-ec \
+                      texlive-capt-of \
+                      texlive-eqparbox \
+                      texlive-euenc \
+                      "tex(threeparttablex.sty)" \
+                      "tex(tabu.sty)"
+
+CMD /bin/bash
