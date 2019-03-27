@@ -8,3 +8,23 @@ Crear el container
 
 docker run --name latexcrear -ti -v $PWD/midata:/construir latex
 =================================================================
+
+Comandos para latex
+
+Para limpiar
+
+make latex clean
+
+Para crear el pdf
+
+make latexpdf
+
+
+=================================================================
+Comandos para kzar
+ESTA ES LA SINTAX DE KZAR
+sar -A -f /var/log/sa/sa28
+
+Interfaces
+sar -r -n DEV -f /var/log/sa/sa28
+=================================================================
